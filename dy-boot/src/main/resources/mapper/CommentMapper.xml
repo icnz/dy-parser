@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cariton.apps.douyin.mapper.CommentMapper">
+
+    <resultMap id="BaseResultMap" type="cn.cariton.apps.douyin.domain.Comment">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="token" column="token" jdbcType="VARCHAR"/>
+            <result property="cid" column="cid" jdbcType="VARCHAR"/>
+            <result property="rid" column="rid" jdbcType="VARCHAR"/>
+            <result property="text" column="text" jdbcType="VARCHAR"/>
+            <result property="images" column="images" jdbcType="VARCHAR"/>
+            <result property="vid" column="vid" jdbcType="VARCHAR"/>
+            <result property="stamp" column="stamp" jdbcType="BIGINT"/>
+            <result property="area" column="area" jdbcType="VARCHAR"/>
+            <result property="uid" column="uid" jdbcType="VARCHAR"/>
+            <result property="sid" column="sid" jdbcType="VARCHAR"/>
+            <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+            <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+            <result property="suid" column="suid" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,token,cid,
+        rid,text,images,
+        vid,stamp,area,
+        uid,sid,nickname,
+        avatar,suid,create_time
+    </sql>
+</mapper>
